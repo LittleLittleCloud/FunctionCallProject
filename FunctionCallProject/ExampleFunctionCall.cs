@@ -20,9 +20,9 @@ namespace FunctionCallProject
         }
 
         /// <summary>
-        /// example functions
+        /// example functions blabla
         /// </summary>
-        /// <param name="input">input</param>
+        /// <param name="input">inputsfsdf</param>
         [CopilotFunction]
         public async Task<string> ExampleFunctionCall2Async(string input)
         {
