@@ -1,4 +1,4 @@
-﻿using AgentChat;
+﻿using CopilotBuilder;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,11 +10,21 @@ namespace FunctionCallProject
     public partial class ExampleFunctionCall
     {
         /// <summary>
-        /// example function call
+        /// example function call blablabl
         /// </summary>
         /// <param name="input">input</param>
-        [FunctionAttribution]
+        [CopilotFunction]
         public async Task<string> ExampleFunctionCallAsync(string input)
+        {
+            return input;
+        }
+
+        /// <summary>
+        /// example functions
+        /// </summary>
+        /// <param name="input">input</param>
+        [CopilotFunction]
+        public async Task<string> ExampleFunctionCall2Async(string input)
         {
             return input;
         }

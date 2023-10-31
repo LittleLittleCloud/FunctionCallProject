@@ -1,0 +1,13 @@
+﻿{
+  "Type": "Copilot_Configuration",
+  "Version": 0,
+  "Agent": {
+    "Type": "Agent",
+    "Version": 0,
+    "Prompt": {
+      "Type": "Prompt",
+      "Version": 0,
+      "SystemMessage": "You are a helpful AI assistant."
+    }
+  }
+}
