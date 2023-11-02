@@ -10,10 +10,10 @@
 
 	<ItemGroup>
 		<PackageReference Include="CopilotBuilder.Core"
-						  Version="0.4.0"
+						  Version="0.4.1"
 						  GeneratePathProperty="True" />
 		<PackageReference Include="CopilotBuilder.SourceGenerator"
-						  Version="0.4.0"
+						  Version="0.4.1"
 						  GeneratePathProperty="True" />
 		<Reference Include="$(PkgCopilotBuilder_SourceGenerator)\analyzers\dotnet\cs\CopilotBuilder.SourceGenerator.dll"/>
 

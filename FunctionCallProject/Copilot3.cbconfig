@@ -1,0 +1,93 @@
+﻿{
+  "Type": "Copilot_Configuration",
+  "Version": 0,
+  "Agent": {
+    "Type": "Agent",
+    "Version": 0,
+    "LLM": {
+      "Type": "OpenAiGPT",
+      "Version": 0,
+      "ModelName": "gpt-3.5-turbo",
+      "Temperature": 0.699999988,
+      "ApiKeyEnvVar": "OPENAI_API_KEY"
+    },
+    "Documents": [],
+    "VectorStore": {
+      "Type": "jsonFilevectorStore",
+      "Version": 0
+    },
+    "Prompt": {
+      "Type": "Prompt",
+      "Version": 0,
+      "SystemMessage": "You are a helpful AI assistant.\r\n\r\nGreeting by calling SayHi",
+      "TopK": 3,
+      "Threshold": 0.5,
+      "IncludeMetaData": true
+    },
+    "CopilotFunctions": [
+      {
+        "Type": "CopilotFunction",
+        "Version": 0,
+        "FullClassName": "FunctionCallProject.ExampleFunctionCall",
+        "Name": "SayHi",
+        "Description": "say hello.",
+        "Parameters": [
+          {
+            "Type": "CopilotFunctionParameter",
+            "Version": 0,
+            "Name": "name",
+            "Description": "caller name",
+            "FunctionType": "string",
+            "IsOptional": false
+          }
+        ],
+        "ReturnType": "Task\u003Cstring\u003E"
+      },
+      {
+        "Type": "CopilotFunction",
+        "Version": 0,
+        "FullClassName": "FunctionCallProject.ExampleFunctionCall",
+        "Name": "CalculateTax",
+        "Description": "calculate tax",
+        "Parameters": [
+          {
+            "Type": "CopilotFunctionParameter",
+            "Version": 0,
+            "Name": "price",
+            "Description": "price. type is float",
+            "FunctionType": "float",
+            "IsOptional": false
+          },
+          {
+            "Type": "CopilotFunctionParameter",
+            "Version": 0,
+            "Name": "rate",
+            "Description": "tax rate",
+            "FunctionType": "float",
+            "IsOptional": true,
+            "DefaultValue": "0.05f"
+          }
+        ],
+        "ReturnType": "Task\u003Cstring\u003E"
+      },
+      {
+        "Type": "CopilotFunction",
+        "Version": 0,
+        "FullClassName": "FunctionCallProject.ExampleFunctionCall",
+        "Name": "CalcuateShipping",
+        "Description": "calculate shipping",
+        "Parameters": [
+          {
+            "Type": "CopilotFunctionParameter",
+            "Version": 0,
+            "Name": "price",
+            "Description": "price. type is float",
+            "FunctionType": "float",
+            "IsOptional": false
+          }
+        ],
+        "ReturnType": "Task\u003Cstring\u003E"
+      }
+    ]
+  }
+}
