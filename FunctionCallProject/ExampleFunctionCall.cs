@@ -1,10 +1,4 @@
-﻿using CopilotBuilder;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.ML.Copilot;
 
 namespace FunctionCallProject
 {
@@ -24,6 +18,7 @@ namespace FunctionCallProject
         /// calculate tax
         /// </summary>
         /// <param name="rate">tax rate</param>
+        /// <param name="price">price</param>
         [CopilotFunction]
         public async Task<string> CalculateTax(float price, float rate = 0.05f)
         {

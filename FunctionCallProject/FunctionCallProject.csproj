@@ -9,13 +9,8 @@
   </PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="CopilotBuilder.Core"
-						  Version="0.4.1"
-						  GeneratePathProperty="True" />
-		<PackageReference Include="CopilotBuilder.SourceGenerator"
-						  Version="0.4.1"
-						  GeneratePathProperty="True" />
-		<Reference Include="$(PkgCopilotBuilder_SourceGenerator)\analyzers\dotnet\cs\CopilotBuilder.SourceGenerator.dll"/>
+		<PackageReference Include="Microsoft.ML.Copilot"
+						  Version="16.17.0"/>
 
 	</ItemGroup>
 
