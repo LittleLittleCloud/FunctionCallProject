@@ -9,9 +9,14 @@
   </PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Microsoft.ML.Copilot"
-						  Version="16.17.0"/>
+		<PackageReference Include="Microsoft.ML.Copilot" Version="0.1.2" />
+		
+		<!--Because of https://github.com/microsoft/semantic-kernel/issues/2953-->
+		<PackageReference Include="Microsoft.Bcl.AsyncInterfaces" Version="7.0.0" />
+	</ItemGroup>
 
+	<ItemGroup>
+		<AdditionalFiles Include="*.cbconfig" />
 	</ItemGroup>
 
 

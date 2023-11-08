@@ -1,0 +1,30 @@
+﻿{
+  "Type": "Copilot_Configuration",
+  "Version": 0,
+  "Agent": {
+    "Type": "Agent",
+    "Version": 0,
+    "LLM": {
+      "Type": "OpenAiGPT",
+      "Version": 0,
+      "ModelName": "gpt-3.5-turbo",
+      "Temperature": 0.699999988,
+      "ApiKeyEnvVar": "OPENAI_API_KEY"
+    },
+    "Plugins": [
+      {
+        "Type": "OpenApiplugin",
+        "Version": 0,
+        "Name": "ProductSearch",
+        "Description": "Search through Contoso\u0027s wide range of outdoor and recreational products.",
+        "BaseUrl": "https://dotnetaoaiproductsapi.ashywave-aafd1691.northcentralus.azurecontainerapps.io",
+        "SchemaUrl": "https://dotnetaoaiproductsapi.ashywave-aafd1691.northcentralus.azurecontainerapps.io/swagger/v1/swagger.json"
+      }
+    ],
+    "Prompt": {
+      "Type": "Prompt",
+      "Version": 0,
+      "SystemMessage": "You query contoso products"
+    }
+  }
+}

@@ -1,8 +1,7 @@
 ﻿using Microsoft.ML.Copilot;
-
 namespace FunctionCallProject
 {
-    public partial class ExampleFunctionCall
+    public partial class Copilot3
     {
         /// <summary>
         /// say hello.

@@ -15,52 +15,6 @@
       "Type": "Prompt",
       "Version": 0,
       "SystemMessage": "You are a helpful AI assistant."
-    },
-    "CopilotFunctions": [
-      {
-        "Type": "CopilotFunction",
-        "Version": 0,
-        "FullClassName": "FunctionCallProject.ExampleFunctionCall",
-        "Name": "ExampleFunctionCallAsync",
-        "Description": "example function call",
-        "Parameters": [
-          {
-            "Type": "CopilotFunctionParameter",
-            "Version": 0,
-            "Name": "input",
-            "Description": "input",
-            "FunctionType": "string",
-            "IsOptional": false
-          },
-          {
-            "Type": "CopilotFunctionParameter",
-            "Version": 0,
-            "Name": "input2",
-            "Description": "input2. type is string",
-            "FunctionType": "string",
-            "IsOptional": false
-          }
-        ],
-        "ReturnType": "Task\u003Cstring\u003E"
-      },
-      {
-        "Type": "CopilotFunction",
-        "Version": 0,
-        "FullClassName": "FunctionCallProject.ExampleFunctionCall",
-        "Name": "ExampleFunctionCall2Async",
-        "Description": "example functions blabla",
-        "Parameters": [
-          {
-            "Type": "CopilotFunctionParameter",
-            "Version": 0,
-            "Name": "input",
-            "Description": "inputsfsdf",
-            "FunctionType": "string",
-            "IsOptional": false
-          }
-        ],
-        "ReturnType": "Task\u003Cstring\u003E"
-      }
-    ]
+    }
   }
 }

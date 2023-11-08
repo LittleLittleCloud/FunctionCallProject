@@ -1,0 +1,43 @@
+﻿{
+  "Type": "Copilot_Configuration",
+  "Version": 0,
+  "Agent": {
+    "Type": "Agent",
+    "Version": 0,
+    "LLM": {
+      "Type": "OpenAiGPT",
+      "Version": 0,
+      "ModelName": "gpt-3.5-turbo",
+      "Temperature": 0.699999988,
+      "ApiKeyEnvVar": "OPENAI_API_KEY"
+    },
+    "Documents": [
+      {
+        "Type": "PlainTextDocument",
+        "Version": 0,
+        "Path": "C:\\Users\\xiaoyuz\\Downloads\\contoso q\u0026a.txt",
+        "Name": "contoso q\u0026a",
+        "Description": "q\u0026a about contoso customer policy"
+      }
+    ],
+    "Embedding": {
+      "Type": "OpenAITextAda",
+      "Version": 0,
+      "ModelName": "text-embedding-ada-002",
+      "ApiKeyEnvVar": "OPENAI_API_KEY"
+    },
+    "VectorStore": {
+      "Type": "jsonFilevectorStore",
+      "Version": 0,
+      "IndexPath": "C:\\Users\\xiaoyuz\\source\\repos\\FunctionCallProject\\FunctionCallProject\\index.json"
+    },
+    "Prompt": {
+      "Type": "Prompt",
+      "Version": 0,
+      "SystemMessage": "You are a helpful AI assistant.",
+      "TopK": 3,
+      "Threshold": 0.5,
+      "IncludeMetaData": true
+    }
+  }
+}
